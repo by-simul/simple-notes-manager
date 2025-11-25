@@ -4,11 +4,20 @@ if(!defined('ABSPATH')) exit;
 
 class Frontend{
 
-    public function __construct()
-    {
-       add_shortcode('simple_notes',array($this,"show_notes"));
+    public function __construct(){
+        add_shortcode('simple_notes',array($this,"show_notes"));
+
+        add_action('wp_enqueue_scripts', array($this, 'enqueue_frontend_styles'));
     }
 
+    public function enqueue_frontend_styles() {
+        wp_enqueue_style(
+            'snm-frontend-style', 
+            plugin_dir_url(__FILE__) . '../assets/css/style.css', 
+            [],
+            '1.0'
+        );
+    }
 
     public function show_notes(){
         global $wpdb;

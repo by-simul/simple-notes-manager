@@ -1,0 +1,88 @@
+/* ---------- Add Note Page ---------- */
+.add-note-wrap h1 {
+    color: #0073aa;
+    margin-bottom: 20px;
+}
+
+.add-note-wrap input.regular-text,
+.add-note-wrap textarea.large-text {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.add-note-wrap input.button-primary {
+    background-color: #0073aa;
+    border-color: #0073aa;
+    color: #fff;
+}
+
+/* ---------- List Notes Page ---------- */
+.list-notes-wrap h1 {
+    color: #0073aa;
+    margin-bottom: 15px;
+}
+
+.list-notes-wrap table.wp-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list-notes-wrap table th,
+.list-notes-wrap table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-notes-wrap table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ---------- Shortcode Section ---------- */
+.snm-shortcode-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.snm-shortcode-section input[type=text] {
+    width: 250px;
+    padding: 5px;
+}
+
+.snm-shortcode-section button.button {
+    margin-left: 5px;
+}
+
+/* ---------- History Page ---------- */
+.history-wrap h1 {
+    color: #0073aa;
+    margin-bottom: 15px;
+}
+
+.history-wrap ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.history-wrap li {
+    background: #f1f1f1;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* ---------- Frontend Notes ---------- */
+.snm-notes-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.snm-notes-list li {
+    background: #f1f1f1;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+}
